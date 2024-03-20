@@ -30,7 +30,7 @@ def data_collection():
         f = open('data.txt', 'w')
         f.write(f" Name: {first_name} {last_name},\n P Number: {student_number},\n Email: {email},\n Grade: {grade},\n Overall Satisfication: {satisfication},\n Favorite Subject: {favorite_subject},\n Suggestion: {suggestion},\n Recommendation: {recommendation}")
         f.close()
-        
+        #
         return redirect('/result')
     return render_template('data-collection.html', title='Data Collection', form=form)
 
