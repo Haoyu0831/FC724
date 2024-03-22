@@ -27,8 +27,8 @@ def data_collection():
         favorite_subject = form.favorite_subject.data
         suggestion = form.suggestions.data
         recommendation = form.recommendations.data
-        f = open('data.txt', 'w')
-        f.write(f" Name: {first_name} {last_name},\n P Number: {student_number},\n Email: {email},\n Grade: {grade},\n Overall Satisfication: {satisfication},\n Favorite Subject: {favorite_subject},\n Suggestion: {suggestion},\n Recommendation: {recommendation}")
+        f = open('data.txt', 'a')
+        f.write(f" Name: {first_name} {last_name},\n P Number: {student_number},\n Email: {email},\n Grade: {grade},\n Overall Satisfication: {satisfication},\n Favorite Subject: {favorite_subject},\n Suggestion: {suggestion},\n Recommendation: {recommendation}\n\n")
         f.close()
         #
         return redirect('/result')
